@@ -1,6 +1,6 @@
 name: ShareLaTeX
 description: An open-source online real-time collaborative LaTeX editor.
-version: 0.0.1
+version: 0.0.2
 apiVersion: v1
 keywords:
   - sharelatex

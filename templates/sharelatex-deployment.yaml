@@ -42,7 +42,7 @@ spec:
               value: redis
             - name: TEXMFVAR
               value: /var/lib/sharelatex/tmp/texmf-var
-          image: sharelatex/sharelatex
+          image: nebulatgs/sharelatex
           name: sharelatex
           ports:
             - containerPort: 80
