@@ -2,7 +2,21 @@ apiVersion: v1
 entries:
   ShareLaTeX:
   - apiVersion: v1
-    created: "2021-09-03T19:23:42.476189739Z"
+    created: "2021-09-03T19:27:34.074859026Z"
+    description: An open-source online real-time collaborative LaTeX editor.
+    digest: b85b966c76ac2566f2fbe0e9f6ddd208abbc7b73b2b763c35f4f089ad52c0e96
+    home: https://www.overleaf.com/
+    keywords:
+    - sharelatex
+    - overleaf
+    name: ShareLaTeX
+    sources:
+    - https://github.com/overleaf/overleaf
+    urls:
+    - https://offline.codes/sharelatex/ShareLaTeX-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v1
+    created: "2021-09-03T19:27:34.071754247Z"
     description: An open-source online real-time collaborative LaTeX editor.
     digest: e248f74920de9b3ae994ec3f17c77378035a01092bb6dc7ce381d1a673f6e40f
     home: https://www.overleaf.com/
@@ -16,7 +30,7 @@ entries:
     - https://offline.codes/sharelatex/ShareLaTeX-0.0.2.tgz
     version: 0.0.2
   - apiVersion: v1
-    created: "2021-09-03T19:23:42.47474557Z"
+    created: "2021-09-03T19:27:34.070366799Z"
     description: An open-source online real-time collaborative LaTeX editor.
     digest: 7303754f30b3eb02d9d72fcf81405a06c07d825dc0fc51a6b1f45689d6dcab5b
     home: https://www.overleaf.com/
@@ -29,4 +43,4 @@ entries:
     urls:
     - https://offline.codes/sharelatex/ShareLaTeX-0.0.1.tgz
     version: 0.0.1
-generated: "2021-09-03T19:23:42.473592363Z"
+generated: "2021-09-03T19:27:34.069163792Z"
