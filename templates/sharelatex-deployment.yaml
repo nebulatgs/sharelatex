@@ -1,0 +1,58 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: ./kompose convert -c
+    kompose.version: 1.22.0 (955b78124)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: sharelatex
+  name: sharelatex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      io.kompose.service: sharelatex
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: ./kompose convert -c
+        kompose.version: 1.22.0 (955b78124)
+      creationTimestamp: null
+      labels:
+        io.kompose.service: sharelatex
+    spec:
+      containers:
+        - env:
+            - name: EMAIL_CONFIRMATION_DISABLED
+              value: "true"
+            - name: ENABLED_LINKED_FILE_TYPES
+              value: project_file,project_output_file
+            - name: ENABLE_CONVERSIONS
+              value: "true"
+            - name: REDIS_HOST
+              value: redis
+            - name: SHARELATEX_APP_NAME
+              value: Overleaf Community Edition
+            - name: SHARELATEX_MONGO_URL
+              value: mongodb://mongo/sharelatex
+            - name: SHARELATEX_REDIS_HOST
+              value: redis
+            - name: TEXMFVAR
+              value: /var/lib/sharelatex/tmp/texmf-var
+          image: sharelatex/sharelatex
+          name: sharelatex
+          ports:
+            - containerPort: 80
+          resources: {}
+          volumeMounts:
+            - mountPath: /var/lib/sharelatex
+              name: sharelatex-claim0
+      restartPolicy: Always
+      volumes:
+        - name: sharelatex-claim0
+          persistentVolumeClaim:
+            claimName: sharelatex-claim0
+status: {}
