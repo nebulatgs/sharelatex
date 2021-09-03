@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  ShareLaTeX:
+  - apiVersion: v1
+    created: "2021-09-03T18:21:57.383742348Z"
+    description: An open-source online real-time collaborative LaTeX editor.
+    digest: 7303754f30b3eb02d9d72fcf81405a06c07d825dc0fc51a6b1f45689d6dcab5b
+    home: https://www.overleaf.com/
+    keywords:
+    - sharelatex
+    - overleaf
+    name: ShareLaTeX
+    sources:
+    - https://github.com/overleaf/overleaf
+    urls:
+    - https://offline.codes/sharelatex/ShareLaTeX-0.0.1.tgz
+    version: 0.0.1
+generated: "2021-09-03T18:21:57.382691261Z"
